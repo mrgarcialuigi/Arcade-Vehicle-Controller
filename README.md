@@ -8,3 +8,5 @@ Custom vehicle physics for arcade-style games that do not require high details a
 - Traction and air drag.
 - Easy to extend and create different type of vehicles.
 - Example of car and bike.
+
+[Download Play Demo](https://github.com/garcialuigi/ArcadeVehiclesPhysics/releases)

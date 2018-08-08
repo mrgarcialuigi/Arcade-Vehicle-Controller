@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 3eed8165b861f444cbb8fe297fefedd7
+timeCreated: 1462771142
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Animatable
+    100002: carrosserie
+    100004: //RootNode
+    100006: door_front_L
+    100008: door_front_R
+    100010: elements
+    100012: glass_front_L
+    100014: glass_front_R
+    100016: hood
+    100018: spoiler
+    100020: Steering_wheel
+    100022: Tire_Back_L
+    100024: Tire_Back_R
+    100026: Tire_Front_L
+    100028: Tire_Front_R
+    100030: Tires
+    100032: Trunk
+    400000: Animatable
+    400002: carrosserie
+    400004: //RootNode
+    400006: door_front_L
+    400008: door_front_R
+    400010: elements
+    400012: glass_front_L
+    400014: glass_front_R
+    400016: hood
+    400018: spoiler
+    400020: Steering_wheel
+    400022: Tire_Back_L
+    400024: Tire_Back_R
+    400026: Tire_Front_L
+    400028: Tire_Front_R
+    400030: Tires
+    400032: Trunk
+    2300000: carrosserie
+    2300002: door_front_L
+    2300004: door_front_R
+    2300006: elements
+    2300008: glass_front_L
+    2300010: glass_front_R
+    2300012: hood
+    2300014: spoiler
+    2300016: Steering_wheel
+    2300018: Tire_Back_L
+    2300020: Tire_Back_R
+    2300022: Tire_Front_L
+    2300024: Tire_Front_R
+    2300026: Trunk
+    3300000: carrosserie
+    3300002: door_front_L
+    3300004: door_front_R
+    3300006: elements
+    3300008: glass_front_L
+    3300010: glass_front_R
+    3300012: hood
+    3300014: spoiler
+    3300016: Steering_wheel
+    3300018: Tire_Back_L
+    3300020: Tire_Back_R
+    3300022: Tire_Front_L
+    3300024: Tire_Front_R
+    3300026: Trunk
+    4300000: carrosserie
+    4300002: elements
+    4300004: Steering_wheel
+    4300006: hood
+    4300008: Trunk
+    4300010: spoiler
+    4300012: door_front_R
+    4300014: glass_front_R
+    4300016: door_front_L
+    4300018: glass_front_L
+    4300020: Tire_Front_R
+    4300022: Tire_Front_L
+    4300024: Tire_Back_R
+    4300026: Tire_Back_L
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 26
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

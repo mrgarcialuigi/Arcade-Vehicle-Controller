@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 1c6e2ba037554d34bbd27ac5d2632955
+timeCreated: 1493054197
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: car_body
+    100002: car_bumper
+    100004: car_door
+    100006: car_doorhandles
+    100008: car_grill
+    100010: car_hidden_seat
+    100012: car_hinges
+    100014: car_interior
+    100016: car_lights
+    100018: car_tailpipe
+    100020: car_window
+    100022: //RootNode
+    400000: car_body
+    400002: car_bumper
+    400004: car_door
+    400006: car_doorhandles
+    400008: car_grill
+    400010: car_hidden_seat
+    400012: car_hinges
+    400014: car_interior
+    400016: car_lights
+    400018: car_tailpipe
+    400020: car_window
+    400022: //RootNode
+    2300000: car_body
+    2300002: car_bumper
+    2300004: car_door
+    2300006: car_doorhandles
+    2300008: car_grill
+    2300010: car_hidden_seat
+    2300012: car_hinges
+    2300014: car_interior
+    2300016: car_lights
+    2300018: car_tailpipe
+    2300020: car_window
+    3300000: car_body
+    3300002: car_bumper
+    3300004: car_door
+    3300006: car_doorhandles
+    3300008: car_grill
+    3300010: car_hidden_seat
+    3300012: car_hinges
+    3300014: car_interior
+    3300016: car_lights
+    3300018: car_tailpipe
+    3300020: car_window
+    4300000: car_bumper
+    4300002: car_body
+    4300004: car_lights
+    4300006: car_door
+    4300008: car_grill
+    4300010: car_hidden_seat
+    4300012: car_interior
+    4300014: car_tailpipe
+    4300016: car_hinges
+    4300018: car_doorhandles
+    4300020: car_window
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

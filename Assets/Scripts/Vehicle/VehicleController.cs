@@ -61,6 +61,7 @@ namespace Vehicle
         private float straightVelocityMagnitude;
 
         public float SteerInput { get { return steerInput; } }
+        public float BrakeInput { get { return brakeInput; } }
         public bool IsMovingForward { get { return isMovingForward; } }
         public float StraightVelocityMagnitude { get { return straightVelocityMagnitude; } }
 

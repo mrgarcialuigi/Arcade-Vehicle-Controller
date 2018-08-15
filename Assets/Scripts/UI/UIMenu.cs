@@ -17,22 +17,10 @@ namespace UI
         private VehicleController bike;
 
         [SerializeField]
-        private VehicleController tank;
-
-        [SerializeField]
-        private CameraBehaviorSelector cameraBehaviorSelector;
-
-        [SerializeField]
         private FirstPersonCamera firstPersonCamera;
 
         [SerializeField]
-        private TopDownCamera topDownCamera;
-
-        [SerializeField]
         private TMP_Dropdown vehicleDropdown;
-
-        [SerializeField]
-        private TMP_Dropdown cameraDropdown;
 
         public void ButtonPlay_Click()
         {
@@ -40,22 +28,13 @@ namespace UI
             {
                 case 0:
                     driver.SetVehicleController(car);
-                    topDownCamera.SetTarget(car.transform);
                     firstPersonCamera.SetTarget(car.transform);
                     break;
                 case 1:
                     driver.SetVehicleController(bike);
-                    topDownCamera.SetTarget(bike.transform);
                     firstPersonCamera.SetTarget(bike.transform);
                     break;
-                case 2:
-                    driver.SetVehicleController(tank);
-                    topDownCamera.SetTarget(tank.transform);
-                    firstPersonCamera.SetTarget(tank.transform);
-                    break;
             }
-
-            cameraBehaviorSelector.Select(cameraDropdown.value);
 
             // Close ui
             gameObject.SetActive(false);

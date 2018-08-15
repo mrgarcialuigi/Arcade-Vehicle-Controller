@@ -35,6 +35,12 @@ namespace DefaultNamespace
         [SerializeField]
         private float wheelYWhenSpringMax;
 
+        [SerializeField]
+        private Light lightBrakeLeft;
+
+        [SerializeField]
+        private Light lightBrakeRight;
+
         private float springFrontLeftLengthPercent;
         private float springFrontRightLengthPercent;
         private float springRearLeftLengthPercent;
@@ -49,6 +55,7 @@ namespace DefaultNamespace
             wheelRearLeft.transform.Rotate(rollingRotateAxis, rollingRotateAngle);
             wheelRearLeft.transform.Rotate(rollingRotateAxis, rollingRotateAngle);
 
+            // TODO: Fix conflict of rotations, front wheels not rolling properly
             wheelFrontLeft.transform.localEulerAngles = new Vector3(wheelFrontLeft.transform.localEulerAngles.x,
                 wheelsMaxSteer * vehicleController.SteerInput);
             wheelFrontRight.transform.localEulerAngles = new Vector3(wheelFrontLeft.transform.localEulerAngles.x,
@@ -81,6 +88,11 @@ namespace DefaultNamespace
             wheelRearLeft.transform.localPosition = new Vector3(wheelRearLeft.transform.localPosition.x,
                 wheelYWhenSpringMin + (wheelYWhenSpringMax - wheelYWhenSpringMin) * springRearLeftLengthPercent,
                 wheelRearLeft.transform.localPosition.z);
+
+            // Update lights
+            bool isBrakeOn = vehicleController.BrakeInput > 0.0f;
+            lightBrakeLeft.enabled = isBrakeOn;
+            lightBrakeRight.enabled = isBrakeOn;
         }
     }
 }

@@ -10,3 +10,7 @@ Custom vehicle physics for arcade-style games that do not require high details a
 - Example of car and bike.
 
 [Download Play Demo](https://github.com/garcialuigi/ArcadeVehiclesPhysics/releases)
+
+Reference:
+[Space Dust Racing UE4 Arcade Vehicle Physics Tour](https://www.youtube.com/watch?v=LG1CtlFRmpU)
+by Michael Davies

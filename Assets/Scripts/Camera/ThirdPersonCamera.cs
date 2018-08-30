@@ -2,8 +2,15 @@
 
 namespace Camera
 {
-    public class FirstPersonCamera : MonoBehaviour
+    /// <summary>
+    /// Simple third person camera behaviour, acts upon performing transformation
+    /// on the attached gameObject, to follow a given target transform.
+    /// </summary>
+    public class ThirdPersonCamera : MonoBehaviour
     {
+        /// <summary>
+        /// The target camera is following.
+        /// </summary>
         [SerializeField]
         private Transform target;
 
@@ -51,6 +58,10 @@ namespace Camera
             }
         }
 
+        /// <summary>
+        /// Sets the target transform the camera is following
+        /// If passed as null, camera will stop following
+        /// </summary>
         public void SetTarget(Transform target)
         {
             this.target = target;

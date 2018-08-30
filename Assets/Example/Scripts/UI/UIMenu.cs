@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using Vehicle;
 
-namespace UI
+namespace Example.UI
 {
     public class UIMenu : MonoBehaviour
     {
@@ -17,7 +17,7 @@ namespace UI
         private VehicleController bike;
 
         [SerializeField]
-        private FirstPersonCamera firstPersonCamera;
+        private ThirdPersonCamera thirdPersonCamera;
 
         [SerializeField]
         private TMP_Dropdown vehicleDropdown;
@@ -28,11 +28,11 @@ namespace UI
             {
                 case 0:
                     driver.SetVehicleController(car);
-                    firstPersonCamera.SetTarget(car.transform);
+                    thirdPersonCamera.SetTarget(car.transform);
                     break;
                 case 1:
                     driver.SetVehicleController(bike);
-                    firstPersonCamera.SetTarget(bike.transform);
+                    thirdPersonCamera.SetTarget(bike.transform);
                     break;
             }
 

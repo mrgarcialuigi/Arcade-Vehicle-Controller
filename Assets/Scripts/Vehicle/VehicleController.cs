@@ -2,6 +2,12 @@
 
 namespace Vehicle
 {
+    /// <summary>
+    /// Logic for controlling the arcade vehicle, that includes:
+    /// steering, gas, brake, traction, air drag, antirolling using center of mass.
+    /// Receives input data throught public methods, which can be called by the player
+    /// or by AI, for example.
+    /// </summary>
     public class VehicleController : MonoBehaviour
     {
         [SerializeField]
@@ -13,15 +19,29 @@ namespace Vehicle
         [SerializeField]
         private VehicleSuspension suspension;
 
+        /// <summary>
+        /// Center of mass applied to the rigidbody on awake.
+        /// </summary>
         [SerializeField]
         private Transform centerOfMassTransform;
 
+        /// <summary>
+        /// Transform that holds relative position where gas and brake forces are applied.
+        /// Note: Can be shifted for alternative styles of vehicles to give different weight transfer feeling.
+        /// </summary>
         [SerializeField]
         private Transform enginePowerTransform;
 
+        /// <summary>
+        /// Transform that holds relative position where steering left/right forces are applied.
+        /// Note: Can be shifted for alternative styles of vehicles to give different weight transfer feeling.
+        /// </summary>
         [SerializeField]
         private Transform steeringTransform;
 
+        /// <summary>
+        /// The maximum velocity of the vehicle in metters/seconds.
+        /// </summary>
         [SerializeField]
         private float maximumVelocity;
 
@@ -34,6 +54,10 @@ namespace Vehicle
         [SerializeField]
         private float steerFactor;
 
+        /// <summary>
+        /// Sideways traction based on the movement of the vehicle.
+        /// Note: can be tweaked for a more drifting feeling, for example.
+        /// </summary>
         [SerializeField]
         [Range(0.0f, 10.0f)]
         private float sidewaysTraction;
@@ -56,6 +80,7 @@ namespace Vehicle
         /// Range between -1.0f and 1.0f
         /// </summary>
         private float steerInput;
+
         private bool isMovingForward;
         private Vector3 straightVelocity;
         private float straightVelocityMagnitude;
@@ -155,7 +180,7 @@ namespace Vehicle
                     myRigidbody.AddForce(contrarySidewaysVelocity * sidewaysTraction, ForceMode.Acceleration);
                 }
 
-                // Wheels Rolling Resistance, turn front and back traction (so car doesnt tend to move front/back forever)
+                // Wheels Rolling Resistance, turn front and back traction (so vehicle doesnt tend to move front/back forever)
                 const float WHEELS_ROLLING_RESISTANCE_COEFFICIENT = 0.2f;
                 Vector3 wheelsRollingResistanceForce = -(straightVelocity * WHEELS_ROLLING_RESISTANCE_COEFFICIENT);
                 myRigidbody.AddForce(wheelsRollingResistanceForce, ForceMode.Acceleration);

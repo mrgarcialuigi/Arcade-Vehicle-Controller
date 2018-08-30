@@ -1038,6 +1038,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 465820, guid: 9df1de1cce3de2543bef4a7da4ce501b, type: 2}
   m_PrefabInternal: {fileID: 220976917}
+--- !u!1 &223790211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 223790212}
+  m_Layer: 0
+  m_Name: ___________________
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &223790212
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223790211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233072904
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +2693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 162.916, y: 285.913, z: 182.175}
 --- !u!114 &813750073
 MonoBehaviour:
@@ -3915,7 +3943,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 6.472, y: -129.572, z: -49.464}
 --- !u!1 &970088858
 GameObject:
@@ -4147,7 +4175,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1025393271
 Prefab:
@@ -4399,7 +4427,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1039330489
 Prefab:
@@ -5810,7 +5838,7 @@ MonoBehaviour:
   driver: {fileID: 2138311793}
   car: {fileID: 1977875425}
   bike: {fileID: 572252738}
-  firstPersonCamera: {fileID: 813750073}
+  thirdPersonCamera: {fileID: 813750073}
   vehicleDropdown: {fileID: 283797952}
 --- !u!1001 &1243265956
 Prefab:
@@ -5849,7 +5877,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4557112802023596, guid: 30f40534e8877974e90cb444204a3eca, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30f40534e8877974e90cb444204a3eca, type: 2}
@@ -6401,7 +6429,7 @@ Transform:
   - {fileID: 1726400233}
   - {fileID: 514413510}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1315114504
 Prefab:
@@ -9534,7 +9562,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4483405124652956, guid: 994b960220be38848bb7bbc33f96c075, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 994b960220be38848bb7bbc33f96c075, type: 2}
@@ -9858,5 +9886,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

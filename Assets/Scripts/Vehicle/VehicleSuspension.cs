@@ -3,11 +3,18 @@ using UnityEngine;
 
 namespace Vehicle
 {
+    /// <summary>
+    /// Logic for the vehicle suspension, spring damping, using 4 springs:
+    /// FrontLeft, FrontRight, RearLeft, RearRight
+    /// </summary>
     public class VehicleSuspension : MonoBehaviour
     {
         [SerializeField]
         private Rigidbody myRigidbody;
 
+        /// <summary>
+        /// Positive value in metters representing the length of the springs in this suspension.
+        /// </summary>
         [SerializeField]
         private float restLength;
 
@@ -16,9 +23,6 @@ namespace Vehicle
         /// basically as the force/power of the spring.
         /// An optimal setup value is usually 20 times the mass of the vehicle.
         /// </summary>
-        [Tooltip("Is the constant force which the spring push or pulls towards its rest length. Can be seen " +
-                 "basically as the force/power of the spring. " +
-                 "An optimal setup value is usually 20 times the mass of the vehicle.")]
         [SerializeField]
         private float springConstant;
 
@@ -44,6 +48,14 @@ namespace Vehicle
         private Spring springRearRight;
 
         public float RestLength { get { return restLength; } }
+
+        private void Awake()
+        {
+            Debug.Assert(myRigidbody != null, "Member \"myRigidbody\" is required.", this);
+            Debug.Assert(restLength > 0.0f, "\"restLength\" has to be bigger than 0.0.", this);
+            Debug.Assert(springConstant > 0.0f, "\"springConstant\" has to be bigger than 0.0.", this);
+            Debug.Assert(dampingCoefficient > 0.0f, "\"dampingCoefficient\" has to be bigger than 0.0.", this);
+        }
 
         private void FixedUpdate()
         {
@@ -73,6 +85,11 @@ namespace Vehicle
             }
         }
 
+        /// <summary>
+        /// Creates and intializes the springs based on the given positions.
+        /// The suspension logic is unfuncional until this method is called.
+        /// Note: can be called only once.
+        /// </summary>
         public void InitializeSprings(Vector3 frontLeftPosition, Vector3 frontRightPosition, Vector3 rearLeftPosition, Vector3 rearRightPosition)
         {
             if (springsInitialized)
@@ -101,9 +118,9 @@ namespace Vehicle
 
         private void UpdateSpringsLengthAndVelocity()
         {
-            // Velocity is the derivative of localPosition, which formula is: deltaPosition/deltaTime
+            // Velocity is the derivative of springLength, which formula is: springLength/deltaTime
             // This will give you the delta value according to time, second basis
-            // If the frame took  exactly 1second, then the division wont do a thing
+            // If the frame took exactly 1second, then the division wont do a thing
 
             // RL
             float previousSpringLength = springRearLeft.currentLength;
@@ -163,6 +180,11 @@ namespace Vehicle
             return spring;
         }
 
+        /// <summary>
+        /// Returns true when all the springs are "compressed",
+        /// which means all the springs are touching the ground.
+        /// </summary>
+        /// <returns></returns>
         public bool AreAllSpringsGrounded()
         {
             return springFrontLeft.currentLength < restLength &&
@@ -176,12 +198,11 @@ namespace Vehicle
             Vector3 springFrontLeftEndPosition = springFrontLeft.position - transform.up * springFrontLeft.currentLength;
             Vector3 springFrontRightEndPosition = springFrontRight.position - transform.up * springFrontRight.currentLength;
 
-            Vector3 frontEndCenter = springFrontLeftEndPosition + (springFrontRightEndPosition - springFrontLeftEndPosition) * 0.5f;
-
             Vector3 springBackLeftEndPosition = springRearLeft.position - transform.up * springRearLeft.currentLength;
             Vector3 springBackRightEndPosition = springRearRight.position - transform.up * springRearRight.currentLength;
 
             Vector3 backEndCenter = springBackLeftEndPosition + (springBackRightEndPosition - springBackLeftEndPosition) * 0.5f;
+            Vector3 frontEndCenter = springFrontLeftEndPosition + (springFrontRightEndPosition - springFrontLeftEndPosition) * 0.5f;
 
             return (frontEndCenter - backEndCenter).normalized;
         }

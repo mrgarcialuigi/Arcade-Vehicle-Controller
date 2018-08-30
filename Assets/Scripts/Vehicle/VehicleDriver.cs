@@ -1,8 +1,12 @@
-﻿using Input;
+﻿using PlayerInput;
 using UnityEngine;
 
 namespace Vehicle
 {
+    /// <summary>
+    /// The vehicle driver represents an entity which reads player input,
+    /// and drives the selected vehicle controller.
+    /// </summary>
     public class VehicleDriver : MonoBehaviour
     {
         [SerializeField]

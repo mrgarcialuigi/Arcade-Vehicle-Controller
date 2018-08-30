@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 
-namespace Input
+namespace PlayerInput
 {
+    /// <summary>
+    /// Encapsulates player input logic to control the vehicles,
+    /// exposes readonly flags informing the current input state.
+    /// Note: Right and Left are never true at the same time,
+    /// same for Break and Gas.
+    /// </summary>
     public class PcVehicleInput : MonoBehaviour
     {
         [SerializeField]
@@ -28,14 +34,14 @@ namespace Input
         
         private void Update()
         {
-            if (!(UnityEngine.Input.GetKey(leftKeyCode) && UnityEngine.Input.GetKey(rightKeyCode)))
+            if (!(Input.GetKey(leftKeyCode) && Input.GetKey(rightKeyCode)))
             {
-                if (UnityEngine.Input.GetKey(leftKeyCode))
+                if (Input.GetKey(leftKeyCode))
                 {
                     isLeftOn = true;
                     isRightOn = false;
                 }
-                else if (UnityEngine.Input.GetKey(rightKeyCode))
+                else if (Input.GetKey(rightKeyCode))
                 {
                     isLeftOn = false;
                     isRightOn = true;
@@ -52,12 +58,12 @@ namespace Input
                 isRightOn = false;
             }
 
-            if (UnityEngine.Input.GetKey(gasKeyCode))
+            if (Input.GetKey(gasKeyCode))
             {
                 isGasOn = true;
                 isBreakOn = false;
             }
-            else if (UnityEngine.Input.GetKey(breakKeyCode))
+            else if (Input.GetKey(breakKeyCode))
             {
                 isGasOn = false;
                 isBreakOn = true;

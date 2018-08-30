@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Vehicle;
 
-namespace DefaultNamespace
+namespace Example
 {
     public class BikePresenter : MonoBehaviour
     {

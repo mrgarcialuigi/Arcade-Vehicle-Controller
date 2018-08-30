@@ -2,6 +2,9 @@
 
 namespace Vehicle
 {
+    /// <summary>
+    /// Simple monobehaviour that initializes the vehicle suspension springs, based on inspector setup.
+    /// </summary>
     public class SetupVehicleSuspension : MonoBehaviour
     {
         [SerializeField]

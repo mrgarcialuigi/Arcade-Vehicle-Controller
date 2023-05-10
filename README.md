@@ -1,16 +1,8 @@
-# ArcadeVehiclesPhysics
+# Arcade Vehicle Controller
+Vehicle controller implementation for arcade style games, made in Unity.
 
-Custom vehicle physics for arcade-style games that do not require high details and realism, avoiding all the complication of dealing with realistic vehicle physics. It’s a preferable path in making those kinds of games instead of starting with realistic physics and trying to trim it down to arcade, that usually brings a lot of problems specially when making a multiplayer game. This approach also gives full control of the physics and the ability to mutate it or even turn it off for special powers for example.
+- Simple and clean code, intended to serve as starting point or reference for other projects.
+- Custom hover physics, no wheel colliders.
+- Perfect for arcade style games and networked gameplay.
 
-- No WheelColliders!
-- Bouncy Springs.
-- Ability to roll the vehicle.
-- Traction and air drag.
-- Easy to extend and create different type of vehicles.
-- Example of car and bike.
-
-[Download Play Demo](https://github.com/garcialuigi/ArcadeVehiclesPhysics/releases)
-
-Reference:
-[Space Dust Racing UE4 Arcade Vehicle Physics Tour](https://www.youtube.com/watch?v=LG1CtlFRmpU)
-by Michael Davies
+[Download Demo Build](https://github.com/mrgarcialuigi/ArcadeVehicleController/releases)

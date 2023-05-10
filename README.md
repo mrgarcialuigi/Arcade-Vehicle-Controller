@@ -5,4 +5,6 @@ Vehicle controller implementation for arcade style games, made in Unity.
 - Custom hover physics, no wheel colliders.
 - Perfect for arcade style games and networked gameplay.
 
-[Download Demo Build](https://github.com/mrgarcialuigi/ArcadeVehicleController/releases)
+**Demo Video:** https://youtu.be/1GrQ8ZFgAmM
+
+[Download Demo Build (Windows)](https://github.com/mrgarcialuigi/ArcadeVehicleController/releases)
